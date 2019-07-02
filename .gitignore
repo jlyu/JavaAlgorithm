@@ -23,6 +23,6 @@
 hs_err_pid*
 
 # My own files
-.idea
-out
+.idea/
+out/
 JavaAlgorithm.iml

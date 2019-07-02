@@ -5,9 +5,14 @@ public class Gate {
     private String name = "nobody";
     private String address = "Nowhere";
 
-    public synchronized void pass (String name, String address) {
+    public /*synchronized*/ void pass (String name, String address) {
         this.counter++;
         this.name = name;
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+
+        }
         this.address = address;
         check();
     }
