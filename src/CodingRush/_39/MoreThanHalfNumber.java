@@ -21,6 +21,8 @@ package CodingRush._39;
 当计数器归零，则重新记录当前数字和计数器
 
 注意输入数组的边界值。
+
+Tag： partition,
  */
 
 public class MoreThanHalfNumber {

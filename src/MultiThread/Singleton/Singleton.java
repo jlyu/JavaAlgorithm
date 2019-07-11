@@ -1,5 +1,6 @@
 package MultiThread.Singleton;
 
+//@ThreadSave
 public class Singleton {
     private static Singleton instance = null;
 

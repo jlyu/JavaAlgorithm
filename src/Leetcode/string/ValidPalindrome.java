@@ -17,7 +17,7 @@ Example 2:
 
 
 
-package ds.string;
+package Leetcode.string;
 
 public class ValidPalindrome {
     public boolean isPalindrome(String s) {

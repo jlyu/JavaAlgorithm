@@ -14,7 +14,7 @@ Example 2:
     Output: "10101"
 */
 
-package ds.string;
+package Leetcode.string;
 
 public class AddBinary {
     public String addBinary(String a, String b) {

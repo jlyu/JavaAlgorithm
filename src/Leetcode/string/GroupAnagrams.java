@@ -18,7 +18,7 @@ The order of your output does not matter.*/
 
 
 
-package ds.string;
+package Leetcode.string;
 
 import java.util.ArrayList;
 import java.util.HashMap;

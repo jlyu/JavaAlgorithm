@@ -23,7 +23,7 @@ Note:
 
 
 
-package ds.string;
+package Leetcode.string;
 
 public class MultiplyStrings {
     public String multiply(String num1, String num2) {

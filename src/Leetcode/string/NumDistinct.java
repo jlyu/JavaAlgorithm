@@ -20,7 +20,7 @@ Example 2:
 */
 
 
-package ds.string;
+package Leetcode.string;
 
 import java.util.ArrayList;
 import java.util.HashSet;

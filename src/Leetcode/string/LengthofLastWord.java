@@ -14,7 +14,7 @@ Example:
     Output: 5
 
 */
-package ds.string;
+package Leetcode.string;
 
 public class LengthofLastWord {
     public int lengthOfLastWord(String s) {

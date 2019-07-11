@@ -16,7 +16,7 @@ Example:
 * */
 
 
-package ds.string;
+package Leetcode.string;
 
 import java.util.ArrayList;
 import java.util.List;
