@@ -22,12 +22,12 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-public class MaxHeap {
+public class MaxHeapPriorityQueueImpl {
 
     private PriorityQueue<Integer> maxHeap;
     private int size;
 
-    public MaxHeap(int size) {
+    public MaxHeapPriorityQueueImpl(int size) {
         this.size = size;
         this.maxHeap = new PriorityQueue<Integer>(size, new Comparator<Integer>() {
 

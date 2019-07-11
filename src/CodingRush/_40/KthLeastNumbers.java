@@ -13,7 +13,7 @@ package CodingRush._40;
 Tag： partition, 最大堆，红黑树
  */
 
-import DataStructure.MaxHeap;
+import DataStructure.MaxHeapPriorityQueueImpl;
 import java.util.ArrayList;
 
 public class KthLeastNumbers {
@@ -22,7 +22,7 @@ public class KthLeastNumbers {
         final int n = a.length;
         if (n < k || k < 1) { return null; }
 
-        MaxHeap maxHeap = new MaxHeap(k);
+        MaxHeapPriorityQueueImpl maxHeap = new MaxHeapPriorityQueueImpl(k);
 
         for (int i = 0; i < n; i++) {
             if(maxHeap.size() < k) {
