@@ -25,6 +25,9 @@ package CodingRush._39;
 Tag： partition,
  */
 
+
+import Algorithms.QuickSort;
+
 public class MoreThanHalfNumber {
     private int result = 0;
     private int counter = 0;
@@ -53,11 +56,35 @@ public class MoreThanHalfNumber {
         return result;
     }
 
+    public int solve2(int[] a) {
+        final int n = a.length;
+        int middle = n >> 1;
+        int begin = 0;
+        int end = n - 1;
+        int pivot = QuickSort.partition(a, begin, end);
+        while (pivot != middle) {
+            if (pivot > middle) {
+                end = pivot - 1;
+            }
+
+            else {
+                begin = pivot + 1;
+            }
+            pivot = QuickSort.partition(a, begin, end);
+        }
+
+        //TODO: validation
+        return a[middle];
+    }
+
 
     public static void main(String[] args) {
         MoreThanHalfNumber ins = new MoreThanHalfNumber();
 
         int[] test1 = {1,2,3,4,4,4,4};
         System.out.println(ins.solve(test1));
+
+        int[] test2 = {1,2,3,2,2,2,5,4,2};
+        System.out.println(ins.solve2(test2));
     }
 }

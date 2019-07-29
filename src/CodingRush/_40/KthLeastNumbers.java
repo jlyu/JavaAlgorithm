@@ -11,7 +11,7 @@ package CodingRush._40;
 那么这样的时间复杂度是 O(n * 选择的数据结构在查找，删除，插入全过程的时间复杂度)
 
 Tag： partition, 最大堆，红黑树
- */
+*/
 
 import DataStructure.MaxHeapPriorityQueueImpl;
 import java.util.ArrayList;
@@ -28,8 +28,8 @@ public class KthLeastNumbers {
             if(maxHeap.size() < k) {
                 maxHeap.offer(a[i]);
             } else {
-                // find the max value from maxHeap
-                // remove current value and insert the new value
+                // poll the max value from maxHeap，compare to the current value
+                // remove current value or maxValue and insert the new value
                 if (maxHeap.peek() > a[i]) {
                     maxHeap.poll();
                     maxHeap.offer(a[i]);
@@ -41,7 +41,7 @@ public class KthLeastNumbers {
 
     public static void main(String[] args) {
 
-        System.out.println( new KthLeastNumbers().solve(new int[]{4, 5, 1, 1, 2, 7, 3, 8}, 4).toString() );
+        System.out.println( new KthLeastNumbers().solve((new int[] {4, 5, 1, 1, 2, 7, 3, 8}), 4).toString() );
     }
 
 }

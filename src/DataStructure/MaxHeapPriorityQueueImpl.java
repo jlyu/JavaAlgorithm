@@ -14,8 +14,6 @@ that is, it provides constant time retrieval and logarithmic time removal of bot
 This makes the min-max heap a very useful data structure to implement a double-ended priority queue.
 Like binary min-heaps and max-heaps, min-max heaps support logarithmic insertion and deletion and can be built in linear time.
 
-
-https://www.jianshu.com/p/257820688bf1
 */
 
 import java.util.ArrayList;
