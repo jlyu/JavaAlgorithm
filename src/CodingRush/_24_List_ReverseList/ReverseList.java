@@ -6,7 +6,7 @@ public class ReverseList {
 
     public MyList.ListNode reverseList(MyList.ListNode head) {
         MyList.ListNode reversedHead = null;
-        MyList.ListNode prevousNode = null;
+        MyList.ListNode previousNode = null;
         MyList.ListNode currentNode = head;
 
         while (currentNode != null) {
@@ -14,8 +14,8 @@ public class ReverseList {
             if (nextNode == null) {
                 reversedHead = currentNode;
             }
-            currentNode.next = prevousNode;
-            prevousNode = currentNode;
+            currentNode.next = previousNode;
+            previousNode = currentNode;
             currentNode = nextNode;
         }
 
