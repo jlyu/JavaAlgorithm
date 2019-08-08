@@ -1,6 +1,5 @@
 package CodingRush._62_List_JosephRing;
 
-import CodingRush._18_List_DeleteListNode.DeleteListNode;
 import DataStructure.MyList;
 
 public class JosephRing {

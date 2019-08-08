@@ -24,12 +24,12 @@ public class PokerIsContinuous {
     }
 
     void unitTest1() {
-        // false
+        // false cases
         System.out.println(isContinuous(new int[] {8,0,0,5,3}));
         System.out.println(isContinuous(new int[] {5,0,2,2,0}));
         System.out.println(isContinuous(new int[] {1,0,0,0,9}));
 
-        // true
+        // true cases
         System.out.println(isContinuous(new int[] {0,0,0,0,0}));
         System.out.println(isContinuous(new int[] {1,2,5,4,3}));
         System.out.println(isContinuous(new int[] {1,0,5,4,3}));

@@ -24,7 +24,6 @@ public class FindAllNumsWithSum {
                 small += 1;
 
                 if (curSum == sum) { printRangeNums(small, big); }
-
             }
 
             big += 1;

@@ -1,6 +1,5 @@
 package CodingRush._64_Misc_ConstructorSum;
 
-import jdk.management.resource.internal.inst.FileOutputStreamRMHooks;
 
 public class ConstructorSum {
     private static int n = 0;
@@ -20,15 +19,9 @@ public class ConstructorSum {
         return ConstructorSum.getSum();
     }
 
-
     public static void main(String[] args) {
-
         final int N = 10;
-
         ConstructorSum s = new ConstructorSum();
-
-
-
         System.out.println(s.solution(N));
     }
 }

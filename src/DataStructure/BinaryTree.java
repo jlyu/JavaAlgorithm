@@ -22,6 +22,9 @@ public class BinaryTree {
     public BinaryTree(){
         this.root = new Node(1);
     }
+    public BinaryTree(int v){
+        this.root = new Node(v);
+    }
 
     public Node getRoot() {
         return root;

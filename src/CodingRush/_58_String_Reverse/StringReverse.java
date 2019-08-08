@@ -39,18 +39,6 @@ public class StringReverse {
         reverse(chs, 0, str.length() - 1);
 
         return String.valueOf(chs);
-
-//        char[] left = str.substring(0, n).toCharArray();
-//        char[] right = str.substring(n, str.length()).toCharArray();
-//
-//        reverse(left, 0, left.length - 1);
-//        reverse(right, 0, right.length - 1);
-//
-//        String revString = String.valueOf(left) + String.valueOf(right);
-//        char[] revChs = revString.toCharArray();
-//        reverse(revChs, 0, revChs.length - 1);
-//
-//        return String.valueOf(revChs);
     }
 
     void unitTest1() {
