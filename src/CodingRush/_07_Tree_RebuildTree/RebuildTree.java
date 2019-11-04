@@ -11,16 +11,16 @@ public class RebuildTree {
 
         for (int i = iStart; i <= iEnd; i++) {
             if (inOrder[i] == preOrder[pStart]) {
-                root.left = rebuildTree(preOrder, pStart + 1, pStart + i - iStart, inOrder, iStart, i - 1 );
-                root.right= rebuildTree(preOrder, pStart + i - iStart, pEnd, inOrder, i+1, iEnd);
+                root.left = rebuildTree(preOrder, pStart + 1,         pStart + i - iStart, inOrder,  iStart,       i - 1 );
+                root.right= rebuildTree(preOrder, pStart + i - iStart, pEnd,                      inOrder, i + 1, iEnd);
                 break;
             }
         }
         return root;
 
     }
-    public BinaryTree.Node rebuildTree(int[] preOrder, int[] innerOrder) {
-        return rebuildTree(preOrder, 0, preOrder.length - 1, innerOrder, 0, innerOrder.length - 1);
+    public BinaryTree.Node rebuildTree(int[] preOrder, int[] inOrder) {
+        return rebuildTree(preOrder, 0, preOrder.length - 1, inOrder, 0, inOrder.length - 1);
     }
 
 
