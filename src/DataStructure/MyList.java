@@ -69,4 +69,13 @@ public class MyList {
         System.out.print("null.");
     }
 
+    public void printFromNode(ListNode node) {
+        ListNode header = node;
+        while (header != null) {
+            System.out.print(header.value + " -> ");
+            header = header.next;
+        }
+        System.out.print("null.");
+    }
+
 }

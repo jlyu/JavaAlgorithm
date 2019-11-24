@@ -1,4 +1,4 @@
-package Leetcode._002_Add_Two_Numbers;
+package Leetcode._002_M_Add_Two_Numbers;
 
 // https://leetcode-cn.com/problems/add-two-numbers/
 
@@ -15,10 +15,6 @@ Input: (2 -> 4 -> 3) + (5 -> 6 -> 4)
 Output: 7 -> 0 -> 8
 Explanation: 342 + 465 = 807.
  */
-
-import DataStructure.MyList;
-
-import java.util.List;
 
 public class AddTwoNumbers {
 

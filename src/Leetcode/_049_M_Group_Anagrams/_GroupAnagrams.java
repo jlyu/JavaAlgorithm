@@ -18,14 +18,14 @@ The order of your output does not matter.*/
 
 
 
-package Leetcode.string;
+package Leetcode._049_M_Group_Anagrams;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class GroupAnagrams {
+public class _GroupAnagrams {
     public static int additiveHash(String key) {
         int[] prime = {29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97,101,103,107,109,113,127,131,137,139,149};
         int hashCode = key.length();
