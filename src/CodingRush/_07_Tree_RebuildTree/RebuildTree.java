@@ -9,10 +9,17 @@ public class RebuildTree {
         BinaryTree binaryTree = new BinaryTree(preOrder[pStart]);
         BinaryTree.Node root = binaryTree.getRoot();
 
+//        for (int i = iStart; i <= iEnd; i++) {
+//            if (inOrder[i] == preOrder[pStart]) {
+//                root.left = rebuildTree(preOrder, pStart + 1,         pStart + i - iStart, inOrder,  iStart,       i - 1 );
+//                root.right= rebuildTree(preOrder, pStart + i - iStart, pEnd,                      inOrder, i + 1, iEnd);
+//                break;
+//            }
+//        }
         for (int i = iStart; i <= iEnd; i++) {
             if (inOrder[i] == preOrder[pStart]) {
-                root.left = rebuildTree(preOrder, pStart + 1,         pStart + i - iStart, inOrder,  iStart,       i - 1 );
-                root.right= rebuildTree(preOrder, pStart + i - iStart, pEnd,                      inOrder, i + 1, iEnd);
+                root.left  = rebuildTree(preOrder, pStart + 1, pStart + i - iStart, inOrder, iStart, i-1);
+                root.right = rebuildTree(preOrder, pStart + i - iStart + 1, pEnd,              inOrder, i + 1, iEnd);
                 break;
             }
         }

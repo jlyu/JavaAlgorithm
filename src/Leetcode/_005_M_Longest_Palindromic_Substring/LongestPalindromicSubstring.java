@@ -16,7 +16,7 @@ Input: "cbbd"
 Output: "bb"
 
 
-链接：https://leetcode-cn.com/problems/longest-palindromic-substring
+https://leetcode-cn.com/problems/longest-palindromic-substring
  */
 
 public class LongestPalindromicSubstring {

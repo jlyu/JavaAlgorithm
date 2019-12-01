@@ -33,7 +33,7 @@ Input: "{[]}"
 Output: true
 
 
-链接：https://leetcode-cn.com/problems/valid-parentheses
+https://leetcode-cn.com/problems/valid-parentheses
 
 
  */

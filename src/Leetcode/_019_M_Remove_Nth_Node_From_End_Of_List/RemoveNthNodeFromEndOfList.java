@@ -15,7 +15,7 @@ Given n will always be valid.
 Follow up: Could you do this in one pass?
 
 
-链接：https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list
+https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list
 
 
  * Definition for singly-linked list.

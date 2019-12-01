@@ -23,8 +23,6 @@ A solution set is:
   [2,2,3]
 ]
 
-
-
 Example 2:
 
 Input: candidates = [2,3,5], target = 8,
@@ -36,7 +34,7 @@ A solution set is:
 ]
 
 
-链接：https://leetcode-cn.com/problems/combination-sum
+https://leetcode-cn.com/problems/combination-sum
 
  */
 public class CombinationSum {
