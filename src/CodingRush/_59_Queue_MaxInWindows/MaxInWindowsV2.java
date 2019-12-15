@@ -35,8 +35,16 @@ public class MaxInWindowsV2 {
         }
     }
 
+    void unitTest2() {
+        List<Integer> n = Arrays.asList(new Integer[]{1, 3, -1, -3, 5,3,6,7});
+        List<Integer> maxInWindows = maxInWindows(n, 3);
+        for (Integer i:maxInWindows) {
+            System.out.print(i + ",");
+        }
+    }
+
     public static void main(String[] args) {
         MaxInWindowsV2 m = new MaxInWindowsV2();
-        m.unitTest1();
+        m.unitTest2();
     }
 }

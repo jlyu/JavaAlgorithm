@@ -65,8 +65,12 @@ public class _GroupAnagrams {
         System.out.println( ins.groupAnagrams(new String[]{"duh","ill"})  );
         System.out.println( ins.groupAnagrams(new String[]{"eat", "tea", "tan", "ate", "nat", "bat"})  );
         System.out.println( ins.groupAnagrams(new String[]{"cab","tin","pew","duh","may","ill","buy","bar","max","doc"})  );
-        System.out.println( ins.groupAnagrams(new String[]{"mod","mop","pip","tug","hop","dog","met","zoe","axe","mug","fdr","for","fro","fdr","pap","ray","lop","nth","old","eva","ell","mci","wee","ind","but","all","her","lew","ken","awl","law","rim","zit","did","yam","not","ref","lao","gab","sax","cup","new","job","new","del","gap","win","pot","lam","mgm","yup","hon","khz","sop","has","era","ark"})  );
-        System.out.println( ins.groupAnagrams(new String[]{"ivy","hop","dug","chi","tub","man","yak","pub","son","ohm","gut","hem","pub","gad","hew","bit","arm","vat","sop","nan","dot","fdr","tad","big","her","yea","sis"})  );
+        System.out.println( ins.groupAnagrams(new String[]{"mod","mop","pip","tug","hop","dog","met","zoe","axe","mug",
+                "fdr","for","fro","fdr","pap","ray","lop","nth","old","eva","ell","mci","wee","ind","but","all","her",
+                "lew","ken","awl","law","rim","zit","did","yam","not","ref","lao","gab","sax","cup","new","job","new",
+                "del","gap","win","pot","lam","mgm","yup","hon","khz","sop","has","era","ark"})  );
+        System.out.println( ins.groupAnagrams(new String[]{"ivy","hop","dug","chi","tub","man","yak","pub","son","ohm",
+                "gut","hem","pub","gad","hew","bit","arm","vat","sop","nan","dot","fdr","tad","big","her","yea","sis"})  );
         System.out.println( ins.groupAnagrams(new String[]{"tub","sis"})  );
     }
 }

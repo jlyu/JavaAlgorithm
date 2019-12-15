@@ -54,11 +54,34 @@ public class LongestPalindromicSubstring {
         return longest;
     }
 
+
+    public String longestPalindrome_dp(String s) {
+        final int len = s.length();
+        if (len < 2) { return s; }
+
+        boolean[][] dp = new boolean[len + 1][len + 1];
+        int longestPalndrm = 1;
+        String longestString = s.substring(0,1);
+
+        for (int r = 1; r < len; r++) {
+            for (int l = 0; l < r; l++) {
+                if (s.charAt(l) == s.charAt(r) && ((r - l <= 2) || dp[l + 1][r - 1])){
+                    dp[l][r] = true;
+                    if (r - l + 1 > longestPalndrm) {
+                        longestPalndrm = r - l + 1;
+                        longestString = s.substring(l, r + 1);
+                    }
+                }
+            }
+        }
+        return longestString;
+    }
+
     public void unittest1() {
         //System.out.println(longestPalindrome(""));
         //System.out.println(longestPalindrome("babad"));
         //System.out.println(longestPalindrome("cbbd"));
-        System.out.println(longestPalindrome("bb"));
+        System.out.println(longestPalindrome_dp("bb"));
     }
 
     public static void main(String[] args) {
