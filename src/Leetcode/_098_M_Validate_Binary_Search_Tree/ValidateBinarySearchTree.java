@@ -43,16 +43,13 @@ public class ValidateBinarySearchTree {
         TreeNode(int x) { val = x; }
     }
 
-    private double currValue = Double.MIN_VALUE;
+    private long max = - Long.MAX_VALUE;
 
     public boolean isValidBST(TreeNode root) {
-
         if (root == null) { return true; }
-
         boolean result =  isValidBST(root.left);
-
-        if (currValue < root.val) {
-            currValue = (double) root.val;
+        if (max < root.val) {
+            max = root.val;
         } else {
             return false;
         }
@@ -60,7 +57,7 @@ public class ValidateBinarySearchTree {
     }
 
     public void unittest1() {
-        System.out.println(isValidBST(new TreeNode(-2147483648)));
+        System.out.println(isValidBST(new TreeNode(0)));
     }
 
     public static void main(String[] args) {

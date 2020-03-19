@@ -24,18 +24,18 @@ public class HouseRobber {
     public int rob(int[] nums) {
         if (nums.length == 0) { return 0; }
 
-        int doRobber = nums[0];
-        int dontRobber = 0;
+        int doRob = nums[0];
+        int dontRob = 0;
 
         for (int i = 1; i < nums.length; i++) {
 
-            int prevRobber = doRobber;
-            int prevDontRobber = dontRobber;
+            int prevRob = doRob;
+            int prevDontRob = dontRob;
 
-            doRobber = prevDontRobber + nums[i];
-            dontRobber = Math.max(prevRobber, prevDontRobber);
+            doRob = prevDontRob + nums[i];
+            dontRob = Math.max(prevRob, prevDontRob);
         }
-        return Math.max(doRobber, dontRobber);
+        return Math.max(doRob, dontRob);
     }
 
     public void unittest1() {

@@ -9,6 +9,8 @@ public class FindMinFromSpin {
             } catch (Exception e) { e.printStackTrace(); }
         }
 
+        if (a.length == 1) { return a[0]; }
+
         int index1 = 0;
         int index2 = a.length - 1;
         int middle = index1;
@@ -38,9 +40,15 @@ public class FindMinFromSpin {
         System.out.println();
     }
 
+    void unitTest3() {
+        System.out.print(findMinFromSpin(new int[] {1}));
+        System.out.println();
+    }
+
     public static void main(String[] args) {
         FindMinFromSpin f = new FindMinFromSpin();
         f.unitTest1();
         f.unitTest2();
+        f.unitTest3();
     }
 }

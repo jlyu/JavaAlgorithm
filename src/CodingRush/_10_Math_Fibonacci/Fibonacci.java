@@ -22,6 +22,6 @@ public class Fibonacci {
 
     public static void main(String[] args) {
 
-        System.out.println(Fibonacci.fibonacci(512));
+        System.out.println(Fibonacci.fibonacci(45));
     }
 }

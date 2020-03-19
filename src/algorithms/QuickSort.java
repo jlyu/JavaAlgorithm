@@ -30,7 +30,7 @@ public class QuickSort {
         if (begin < end) {
             int p = partition(a, begin, end);
             quickSort(a, begin, p - 1);
-            quickSort(a, begin + 1, end);
+            quickSort(a, p + 1, end);
         }
     }
 

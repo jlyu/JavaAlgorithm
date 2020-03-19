@@ -80,10 +80,6 @@ public class BinaryTreeLevelOrderTraversal {
         return lists;
     }
 
-//    public List<List<Integer>> levelOrder_v2(TreeNode root) {
-//
-//    }
-
     public void unittest1() {
         TreeNode root = this.createBinaryTreeByArray(new int[] {1,2,3,4,5}, 0);
         List<List<Integer>> lists = levelOrder(root);
